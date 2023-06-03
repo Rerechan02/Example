@@ -193,7 +193,7 @@ case $opt in
 11) clear ; restart ; exit ;;
 12) clear ; nano /etc/baner.rere ; exit ;;
 13) clear ; bw ; exit ;;
-14) clear ; htop
+14) clear ; htop ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) menu ;;
