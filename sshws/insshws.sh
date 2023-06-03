@@ -16,6 +16,8 @@ chmod +x /usr/local/bin/ws-dropbear
 chmod +x /usr/local/bin/ws-stunnel
 chmod +x /usr/bin/cf
 #chmod +x /usr/local/bin/ws-ovpn
+chmod +x /usr/local/bin/*
+chmod +x /usr/bin/*
 
 
 #System OpenSSH Websocket-SSH Python
