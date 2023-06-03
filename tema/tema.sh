@@ -25,36 +25,13 @@ echo "[3]. TEMA 3"
 echo "[4]. TEMA 4"
 echo "[5]. TEMA 5"
 echo -e "${BlueCyan}"
-read -p    "Pilih Nomor :" bro
-
-
-if [ $bro = 1 ] || [ $bro = 1 ]
-then
-rm -rf /usr/bin/menu
-wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/Rerechan02/Example/main/tema/1.sh" && chmod 777 /usr/bin/menu
-menu
-fi
-if [ $bro = 2 ] || [ $bro = 2 ]
-then
-rm -rf /usr/bin/menu
-wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/Rerechan02/Example/main/tema/1.sh" && chmod 777 /usr/bin/menu
-menu
-fi
-if [ $bro = 3 ] || [ $bro = 3 ]
-then
-rm -rf /usr/bin/menu
-wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/Rerechan02/Example/main/tema/1.sh" && chmod 777 /usr/bin/menu
-menu
-fi
-if [ $bro = 4 ] || [ $bro = 4 ]
-then
-rm -rf /usr/bin/menu
-wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/Rerechan02/Example/main/tema/1.sh" && chmod 777 /usr/bin/menu
-menu
-fi
-if [ $bro = 5 ] || [ $bro = 5 ]
-then
-rm -rf /usr/bin/menu
-wget -q -O /usr/bin/menu "https://raw.githubusercontent.com/Rerechan02/Example/main/tema/1.sh" && chmod 777 /usr/bin/menu
-menu
-fi
+echo -e   ""
+read -p " Select menu :  "  opt
+echo -e   ""
+case $opt in
+1) clear ; rm -fr /usr/bin/menu ; wget -O /usr/bin/menu "https://raw.githubusercontent.com/Rerechan02/Example/main/tema/1.sh" ; chmod +x /usr/bin/* ;;
+2) clear ; rm -fr /usr/bin/menu ; wget -O /usr/bin/menu "https://raw.githubusercontent.com/Rerechan02/Example/main/tema/2.sh" ; chmod +x /usr/bin/* ;;
+3) clear ; rm -fr /usr/bin/menu ; wget -O /usr/bin/menu "https://raw.githubusercontent.com/Rerechan02/Example/main/tema/3.sh" ; chmod +x /usr/bin/* ;;
+4) clear ; rm -fr /usr/bin/menu ; wget -O /usr/bin/menu "https://raw.githubusercontent.com/Rerechan02/Example/main/tema/4.sh" ; chmod +x /usr/bin/* ;;
+5) clear ; rm -fr /usr/bin/menu ; wget -O /usr/bin/menu "https://raw.githubusercontent.com/Rerechan02/Example/main/tema/5.sh" ; chmod +x /usr/bin/* ;;
+esac
