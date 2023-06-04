@@ -38,7 +38,7 @@ RESULT=$(curl -sLX PUT "https://api.cloudflare.com/client/v4/zones/${ZONE}/dns_r
      
 echo "Host : $SUB_DOMAIN"
 echo $SUB_DOMAIN > /etc/xray/domain
-echo "IP=$SUB_DOMAIN" > /var/lib/scrz-prem/ipvps.conf
+echo "IP=$SUB_DOMAIN" > /var/lib/SIJA/ipvps.conf
 sleep 1
 yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }
 yellow "Domain added.."
