@@ -331,7 +331,7 @@ wget -O port-change "https://raw.githubusercontent.com/Rerechan02/Example/main/p
 wget -O certv2ray "https://raw.githubusercontent.com/Rerechan02/Example/main/xray/certv2ray.sh"
 wget -O menu-webmin "https://raw.githubusercontent.com/Rerechan02/Example/main/menu/menu-webmin.sh"
 wget -O speedtest "https://raw.githubusercontent.com/Rerechan02/Example/main/ssh/speedtest_cli.py"
-wget -O about "https://raw.githubusercontent.com/Rerechan02/Example/main/menu/about.sh"
+wget -O about "https://raw.githubusercontent.com/Rerechan02/Example/main/menu/Q"
 wget -O auto-reboot "https://raw.githubusercontent.com/Rerechan02/Example/main/menu/auto-reboot.sh"
 wget -O restart "https://raw.githubusercontent.com/Rerechan02/Example/main/menu/restart.sh"
 wget -O bw "https://raw.githubusercontent.com/Rerechan02/Example/main/menu/bw.sh"
