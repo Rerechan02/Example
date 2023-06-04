@@ -1,4 +1,13 @@
 #!/bin/bash
+vlx=$(grep -c -E "^#& " "/etc/xray/config.json")
+let vla=$vlx/2
+vmc=$(grep -c -E "^### " "/etc/xray/config.json")
+let vma=$vmc/2
+ssh1="$(awk -F: '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd | wc -l)"
+
+trx=$(grep -c -E "^#! " "/etc/xray/config.json")
+let tra=$trx/2
+ssx=$(grep -c -E "^## " "/etc/xray/config.json")
 #link izin ip vps
 url_izin='https://raw.githubusercontent.com/Rerechan02/iziznscript/main/ip'
 
@@ -161,7 +170,7 @@ echo -e ""
 echo -e " [ ${GREEN}SSH WebSocket${NC} : ${GREEN}ON ${NC}]    [ ${GREEN}XRAY${NC} : ${status_xray} ]     [ ${GREEN}NGINX${NC} : ${status_nginx} ]"
 echo -e "$COLOR1┌────────────────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1│\033[0m ${BOLD}${YELLOW}SSH  VMESS   VLESS  TROJAN$NC"
-echo -e "$COLOR1│\033[0m ${Blue} $ssh1     $vmc       $vlx      $trx           $NC"
+echo -e "$COLOR1│\033[0m ${Blue} $ssh1     $vma       $vla      $tra           $NC"
 echo -e "$COLOR1└────────────────────────────────────────────────────────────┘${NC}"
 echo -e ""
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
